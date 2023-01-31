@@ -46,11 +46,6 @@ public class Login extends Baseclass{
 		driver.manage().window().maximize();
 	}
 	
-//	@BeforeMethod
-//	public void Start() {
-//		Date d=new Date("dd/mm/YYYY");
-//		System.out.println("Start time" + d);
-//	}
 
 	@Test(priority = 0)
 	private void loginCredentials() throws IOException {
@@ -113,11 +108,16 @@ public class Login extends Baseclass{
 		driver.findElement(By.id("transferAmount")).sendKeys("9876");
 		driver.findElement(By.id("transfer")).click();
 		Thread.sleep(3000);
-		//Validate the Transaction Details message is shown below with correct amount
+		
+		//Validate the Transaction Details message is shown correct amount or not
 		WebElement txt_details = driver.findElement(By.id("_ctl0__ctl0_Content_Main_postResp"));
 		String message = txt_details.getText();
 		System.out.println(message);
+		
+		//Click on the View Recent Transactions 
 		driver.findElement(By.id("MenuHyperLink2")).click();
+		
+		//Validate that the first two transactions being shown is as per the previous transaction
 		WebElement allFirstRowData = driver.findElement(By.xpath("//table[@id='_ctl0__ctl0_Content_Main_MyTransactions']//tr[2]"));
 		Assert.assertTrue(allFirstRowData.getText().contains("800001"));
 		WebElement allSecondRowData = driver.findElement(By.xpath("//table[@id='_ctl0__ctl0_Content_Main_MyTransactions']//tr[3]"));
@@ -126,28 +126,28 @@ public class Login extends Baseclass{
 
 	@Test(priority = 3)
 	private void formFilling() {
+		//Click on Contact Us on Top Right and then click on online form option under Email Section
 		driver.findElement(By.id("HyperLink3")).click();
 		driver.findElement(By.xpath("//a[text()='online form']")).click();
+		
+		//Enter some details here and click on Submit button. 
 		driver.findElement(By.name("email_addr")).sendKeys("saravanan@gmail.com");
 		driver.findElement(By.name("subject")).sendKeys("Transactions History");
-		driver.findElement(By.name("comments")).sendKeys(
-				"I have transferred the amount of $9876 from 800000 to 800001 that was processed successfully");
+		driver.findElement(By.name("comments")).sendKeys("I have transferred the amount of $9876 from 800000 to 800001 that was processed successfully");
 		driver.findElement(By.name("submit")).click();
+		
+		//Validate that on clicking Submit, a Thank You message is displayed
 		WebElement text = driver.findElement(By.xpath("//div[@class='fl']"));
 		String text2 = text.getText();
 		System.out.println(text2);
+		
+		//Click on the Sign Off button on top right. Validate that the user is Signed Off.
 		driver.findElement(By.id("LoginLink")).click();
 	}
 	
-//	@AfterMethod
-//	public void stop() {
-//		Date d=new Date("dd/mm/YYYY");
-//		System.out.println("End time" + d);
-//	}
-//
-//	 @AfterClass
-//	 private void closeBrowser() {
-//	 driver.quit();
-//	 }
+	 @AfterClass
+	 private void closeBrowser() {
+	 driver.quit();
+	 }
 
 }

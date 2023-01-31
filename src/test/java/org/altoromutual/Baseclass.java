@@ -1,6 +1,6 @@
 package org.altoromutual;
 
-import static org.testng.Assert.assertEquals;
+
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,54 +16,13 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Baseclass {
-
-	WebDriver driver;
-	Select s;
-	public void chromebrowserConfig() {
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
-	}
-	
-	public void openUrl(String url) {
-		driver.get(url);
-	}
-	
-	public void pageMaximize() {
-		driver.manage().window().maximize();
-	}
-	
-	public WebElement locateById(String id) {
-		WebElement element = driver.findElement(By.id(id));
-		return element;
-	}
-	
-	public WebElement locateByName(String name) {
-		WebElement element = driver.findElement(By.name(name));
-		return element;
-	}
-	
-	public void tap(WebElement Element) {
-		Element.click();
-	}
 	
 	public void textInput(WebElement Element,String value) {
 		Element.sendKeys(value);
 	}
-	
-	public String getInput(WebElement Element,String value) {
-		String attribute = Element.getAttribute("value");
-		return attribute;	
-	}
-	
 	
 	public String excelRead(String path,String sheet,int row,int cell) throws IOException {
 		String value=null;
@@ -96,11 +55,4 @@ public class Baseclass {
 		return value;
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-}
+	}

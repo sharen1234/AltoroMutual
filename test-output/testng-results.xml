@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17429" started-at="2023-01-31T06:49:50Z" finished-at="2023-01-31T06:50:07Z">
+  <suite name="Default suite" duration-ms="19587" started-at="2023-01-31T07:30:55Z" finished-at="2023-01-31T07:31:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17429" started-at="2023-01-31T06:49:50Z" finished-at="2023-01-31T06:50:07Z">
+    <test name="Default test" duration-ms="19587" started-at="2023-01-31T07:30:55Z" finished-at="2023-01-31T07:31:15Z">
       <class name="org.altoromutual.Login">
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:org.altoromutual.Login@7d9d1a19]" name="browserLaunch" is-config="true" duration-ms="5896" started-at="2023-01-31T06:49:50Z" finished-at="2023-01-31T06:49:56Z">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:org.altoromutual.Login@7d9d1a19]" name="browserLaunch" is-config="true" duration-ms="5804" started-at="2023-01-31T07:30:55Z" finished-at="2023-01-31T07:31:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="loginCredentials()[pri:0, instance:org.altoromutual.Login@7d9d1a19]" name="loginCredentials" duration-ms="2620" started-at="2023-01-31T06:49:56Z" finished-at="2023-01-31T06:49:59Z">
+        <test-method status="PASS" signature="loginCredentials()[pri:0, instance:org.altoromutual.Login@7d9d1a19]" name="loginCredentials" duration-ms="3340" started-at="2023-01-31T07:31:01Z" finished-at="2023-01-31T07:31:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCredentials -->
-        <test-method status="PASS" signature="accountSummary()[pri:1, instance:org.altoromutual.Login@7d9d1a19]" name="accountSummary" duration-ms="1370" started-at="2023-01-31T06:49:59Z" finished-at="2023-01-31T06:50:00Z">
+        <test-method status="PASS" signature="accountSummary()[pri:1, instance:org.altoromutual.Login@7d9d1a19]" name="accountSummary" duration-ms="1964" started-at="2023-01-31T07:31:05Z" finished-at="2023-01-31T07:31:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountSummary -->
-        <test-method status="PASS" signature="transaction()[pri:2, instance:org.altoromutual.Login@7d9d1a19]" name="transaction" duration-ms="4691" started-at="2023-01-31T06:50:00Z" finished-at="2023-01-31T06:50:05Z">
+        <test-method status="PASS" signature="transaction()[pri:2, instance:org.altoromutual.Login@7d9d1a19]" name="transaction" duration-ms="5105" started-at="2023-01-31T07:31:07Z" finished-at="2023-01-31T07:31:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transaction -->
-        <test-method status="PASS" signature="formFilling()[pri:3, instance:org.altoromutual.Login@7d9d1a19]" name="formFilling" duration-ms="2812" started-at="2023-01-31T06:50:05Z" finished-at="2023-01-31T06:50:07Z">
+        <test-method status="PASS" signature="formFilling()[pri:3, instance:org.altoromutual.Login@7d9d1a19]" name="formFilling" duration-ms="3288" started-at="2023-01-31T07:31:12Z" finished-at="2023-01-31T07:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formFilling -->
