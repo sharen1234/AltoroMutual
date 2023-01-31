@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17429" started-at="2023-01-31T06:49:50Z" finished-at="2023-01-31T06:50:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17429" started-at="2023-01-31T06:49:50Z" finished-at="2023-01-31T06:50:07Z">
+      <class name="org.altoromutual.Login">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:org.altoromutual.Login@7d9d1a19]" name="browserLaunch" is-config="true" duration-ms="5896" started-at="2023-01-31T06:49:50Z" finished-at="2023-01-31T06:49:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="loginCredentials()[pri:0, instance:org.altoromutual.Login@7d9d1a19]" name="loginCredentials" duration-ms="2620" started-at="2023-01-31T06:49:56Z" finished-at="2023-01-31T06:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCredentials -->
+        <test-method status="PASS" signature="accountSummary()[pri:1, instance:org.altoromutual.Login@7d9d1a19]" name="accountSummary" duration-ms="1370" started-at="2023-01-31T06:49:59Z" finished-at="2023-01-31T06:50:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountSummary -->
+        <test-method status="PASS" signature="transaction()[pri:2, instance:org.altoromutual.Login@7d9d1a19]" name="transaction" duration-ms="4691" started-at="2023-01-31T06:50:00Z" finished-at="2023-01-31T06:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transaction -->
+        <test-method status="PASS" signature="formFilling()[pri:3, instance:org.altoromutual.Login@7d9d1a19]" name="formFilling" duration-ms="2812" started-at="2023-01-31T06:50:05Z" finished-at="2023-01-31T06:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formFilling -->
+      </class> <!-- org.altoromutual.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
